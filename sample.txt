@@ -1,1 +1,2 @@
-A sample text file for testing git
+
+A simple text file for testing git functionalities on windows
