@@ -12,13 +12,13 @@ if len(fname) < 1:                                  # if absurd filename taken a
     fname = "mbox-short.txt"                        # considers filename as "mbox-short.txt"
 else:                                               # else if proper filename taken as input
     try:                                            # tries to open the file
-        fhand = open(fname)                         # opens the file chosen by user
+        file_hand = open(fname)                         # opens the file chosen by user
     except FileNotFoundError:                       # catches exception if no such file is found
         print('File', fname, 'is not found')        # displays error message
         quit()                                      # quits the program
 
 wordList = list()                                   # creating an empty list to store all the words later
-for line in fhand:                                  # hovering through the lines in file
+for line in file_hand:                                  # hovering through the lines in file
     if line.startswith('From '):                    # if line starts with 'From ' element
         line = line.split()                         # splits the line into a list of words
         wordList.append(line[1])                    # append the 2nd word of each line starting with 'From ' to a list
