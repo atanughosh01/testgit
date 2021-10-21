@@ -1,2 +1,3 @@
 # testgit
-For testing git functionalities on windows
+
+Repo for testing git functionalities on windows
