@@ -1,0 +1,37 @@
+                                   BCSE – 3rd year – 1st Semester – 2021
+                                               Assignment – II
+                                        Operating Systems Laboratory
+1.    a. Design a CPU scheduler for jobs whose execution profiles will be in a file that is to be read and
+      appropriate scheduling algorithm to be chosen by the scheduler.
+          Format of the profile:
+          <Job id> <priority> <arrival time> <CPU burst(1) I/O burst(1) CPU burst(2) ....... >-1
+          (Each information is separated by blank space and each job profile ends with -1. Lesser priority
+          number denotes higher priority process with priority number 1 being the process with highest
+          priority.)
+          Example: 2 3 4 100 2 200 3 25 -1 7 1 8 60 10 ..... -1 etc.
+          Testing:
+          a. Create job profiles for 30 jobs and use three different scheduling algorithms (FCFS, Priority
+               and Round Robin (time slice: 25)).
+          b. Compare the average waiting time, turnaround time of each process for the different
+               scheduling algorithms.
+2. Write a program for p-producer c-consumer problem, p, c >= 1. A shared circular buffer that can hold 50
+   items is to be used. Each producer process can store any number between 1 to 100 (along with the
+   producer id) and deposit in the buffer. Each consumer process reads a number from the buffer and adds
+   it to a shared variable TOTAL (initialized to 0). Though any consumer process can read any of the
+   numbers in the buffer, the only constraint being that every number written by some producer should be
+   read exactly once by exactly one of the consumers.
+    The program reads in the value of p and c from the user, and forks p producers and c consumers. After
+   all the producers and consumers have finished (the consumers exit after all the data produced by all
+   producers have been read), the parent process prints the value of TOTAL. Test the program with
+   different values of p and c.
+3. Write a program for the Reader-Writer process for the following situations:
+    a) Multiple readers and one writer: writer gets to write whenever it is ready (reader/s wait)
+    b) Multiple readers and multiple writers: any writer gets to write whenever it is ready, provided no
+   other writer is currently writing (reader/s wait)
+4. Implement the following applications using different IPC mechanisms. Your choice is restricted to
+   Pipes, FIFOs, and Message Queues (use different mechanisms for each program)
+     a. Broadcasting weather information (one broadcasting process and more than one listeners)
+     b. Telephonic conversation (between a caller and a receiver)
+     c. Broadcasting information regarding pesticides for agricultural fields / prices of agricultural
+          products for marketing with a farmer having the option of putting query (one broadcasting process
+          and more than one listeners with option of calling back)
