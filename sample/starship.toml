@@ -1,5 +1,5 @@
 add_newline = true
-command_timeout = 5000
+command_timeout = 10000
 
 
 
@@ -87,7 +87,7 @@ disabled = true
 
 [python]
 # Only use the `python3` binary to get the version.
-python_binary = "python3"
+python_binary = "python3.9"
 format = "[$symbol$version]($style) "
 style = "bold green"
 
