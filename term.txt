@@ -1,0 +1,3 @@
+C:\\Users\\2001a\\AppData\\Local\\Programs\\Hyper\\resources\\bin\\hyper
+
+"terminal.external.windowsExec": "C:\\Users\\2001a\\AppData\\Local\\Microsoft\\WindowsApps\\wt.exe",
